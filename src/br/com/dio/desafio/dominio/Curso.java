@@ -1,5 +1,12 @@
 package br.com.dio.desafio.dominio;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
 public class Curso extends Conteudo{
 	
 	private int cargaHoraria;
@@ -9,18 +16,5 @@ public class Curso extends Conteudo{
 		// TODO Auto-generated method stub
 		return XP_PADRAO * cargaHoraria;
 	}
-	
-	public int getCargaHoraria() {
-		return cargaHoraria;
-	}
-	public void setCargaHoraria(int cargaHoraria) {
-		this.cargaHoraria = cargaHoraria;
-	}
-	
-	@Override
-	public String toString() {
-		return "\nCursos: Título=" + getTitulo() + ", Descricao=" + getDescricao() + ", Carga Horaria=" + cargaHoraria + "\n";
-	}
-
 	
 }
